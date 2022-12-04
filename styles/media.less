@@ -1,0 +1,146 @@
+@media screen and (max-width: 520px) {
+  .content > .subject > .fast_info {
+    flex-direction: column;
+    align-items: normal;
+
+    & .fast_info_item {
+      margin: 15px;
+      justify-content: space-around;
+
+      &:first-child {
+        margin-left: 15px;
+      }
+
+      &:last-child {
+        margin-right: 15px;
+      }
+
+      & .fast_info_value, & .fast_info_header {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1024px) {
+  .content > .subject > .fast_info {
+    flex-wrap: wrap;
+    margin-top: 0;
+
+    & .fast_info_item {
+      margin-top: 15px;
+      justify-content: space-around;
+
+      &:first-child {
+        margin-left: auto;
+      }
+
+      &:last-child {
+        margin-right: auto;
+      }
+
+      & .fast_info_header {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+
+    & .nav_logo {
+      margin: 20px 0;
+    }
+
+    & .nav_links, & .profile_btn {
+      display: none;
+    }
+
+    & .menu_btn {
+      display: block;
+    }
+  }
+  
+  .content {
+    margin-top: 0;
+
+    & .breadcrumbs {
+      display: none;
+    }
+
+    & .block {
+      flex-direction: column;
+      margin: 15px 0;
+
+      & .info_card {
+        width: 100%;
+      }
+
+      & .graph {
+        width: 100%;
+
+        & .graph_instance {
+          & .graph_content > .graph_values {
+            width: 98%;
+          }
+
+          & .graph_title_bottom {
+            justify-content: space-between;
+            margin-left: 30px;
+            font-size: 12px;
+
+            & p {
+              width: auto;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    & .socials {
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .content > .subject > .block > .graph > .graph_instance {
+    & .graph_content > .graph_values > .graph_bar {
+      margin-left: auto;
+    }
+
+    & .graph_title_bottom {
+      margin-left: 0px;
+  
+      & p {
+        margin-left: auto;
+      }
+    }
+  } 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .content > .subject > .block > .graph {
+    & .graph_instance > .graph_content .graph_values {
+      width: 95%;
+    }
+
+    & .graph_title_bottom  {
+      margin-left: 0;
+    }
+  }
+}
